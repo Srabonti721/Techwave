@@ -173,10 +173,12 @@ header {
 .about {
     text-align: center;
 }
-.about-contant{
-max-width: 1200px;
-margin: 0 auto;
+
+.about-contant {
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 .about-title {
     padding-top: 50px;
     margin-bottom: 16px;
@@ -211,79 +213,141 @@ margin: 0 auto;
     padding-bottom: 16px;
     color: var(--text-color);
 }
-   /* feature episodes */
-.feature-title{
+
+/* feature episodes */
+.feature-title {
     text-align: center;
     font-weight: 700;
     color: var(--text-color);
     font-size: 3rem;
     padding: 120px;
 }
-.feature-card-container{
+
+.feature-card-container {
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
 }
-.feature-card{
+
+.feature-card {
     max-width: 380px;
 }
-.img-box{
+
+.img-box {
     width: 380px;
 }
-.img-box > img{
-    border-radius:24px 24px 0px 0px  ;
+
+.img-box>img {
+    border-radius: 24px 24px 0px 0px;
     width: 100%;
 
 }
-.feature-card-contant{
+
+.feature-card-contant {
     padding: 24px;
     border-radius: 0px 0px 24px 24px;
-background: rgba(37, 13, 68, 1);
-margin-bottom: 120px;
+    background: rgba(37, 13, 68, 1);
+    margin-bottom: 120px;
 }
-.feature-card-title{
-font-weight: 700;
-font-size:1.5rem ;
-color: var(--text-color);
+
+.feature-card-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-color);
 }
-.feature-card-description{
-font-weight: 400;
-font-size: 1rem;
-color: var(--text-color);
-padding-top: 12px;
-padding-bottom: 12px;
+
+.feature-card-description {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--text-color);
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
-.clock{
+
+.clock {
     color: var(--btn-secondary);
     padding-left: 2px;
 }
+
+/* meet the host styles */
+.meet {
+    padding-bottom: 120px;
+}
+
+.host {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.host-container {
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 40px;
+    background: rgba(37, 13, 68, 1);
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.host-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    padding-bottom: 16px;
+}
+
+.host-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    padding-bottom: 16px;
+}
+
+.host-icon {
+    box-sizing: border-box;
+    border: 1px solid rgba(83, 60, 114, 1);
+    padding: 10px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
 /* footer styles */
- footer{
+footer {
     background-image: url('../assets/footer-bg.png');
     padding: 120px 0 230px 0;
     text-align: center;
- }
- #footer-title{
+}
+
+#footer-title {
     font-size: 4rem;
     font-weight: 800;
     padding-bottom: 32px;
- }
-.footer-icon{
+}
+
+.footer-icon {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
 }
-.icon{
+
+.icon {
     justify-content: center;
     align-items: center;
 }
- .footer-description{
+
+.footer-description {
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 400;
     padding-top: 34px;
- }
+}
+
 /* responsive design for mobile device*/
 @media screen and (max-width:576px) {
     .nav-menu {
@@ -295,33 +359,48 @@ padding-bottom: 12px;
     .btn-primary {
         display: none;
     }
-.feature-card-container{
-    flex-direction: column;
-    align-items: center;
-}
-.feature-title{
-    font-size: 2rem;
-}
-.feature-title{
-    padding: 20px;
-}
-    .about-item-box ,
-    .footer-icon
-    {
+
+    /* about */
+    .about-item-box,
+    .footer-icon {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .about-item ,.icon{
+    .about-item,
+    .icon {
         margin: 20px;
     }
 
+    /* feature */
+    .feature-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-title {
+        font-size: 2rem;
+    }
+
+    .feature-title {
+        padding: 20px;
+    }
+
+    /* host */
+    .host-container {
+        flex-direction: column;
+    }
+
+    .host-contant,
+    .icon {
+        text-align: center;
+    }
 }
 
 /* responsive design for tablet device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .feature-card-container{
+    .feature-card-container {
         flex-wrap: wrap;
         justify-content: center;
-    align-items: center;
-}
+        align-items: center;
+    }
 }
