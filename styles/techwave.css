@@ -242,6 +242,7 @@ header {
 /* techwave styles */
 .container {
     max-width: 1600px;
+    margin: 0 auto;
 }
 
 .techwave-title {
@@ -367,6 +368,7 @@ header {
     border-radius: 40px;
     background: rgba(37, 13, 68, 1);
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .host-title {
